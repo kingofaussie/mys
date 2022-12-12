@@ -1805,7 +1805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/app@npm:0.9.0":
+"@firebase/app@npm:0.9.0, @firebase/app@npm:^0.9.0":
   version: 0.9.0
   resolution: "@firebase/app@npm:0.9.0"
   dependencies:
@@ -4529,6 +4529,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "basic@workspace:."
   dependencies:
+    "@firebase/app": ^0.9.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
