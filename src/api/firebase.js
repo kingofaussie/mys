@@ -1,5 +1,6 @@
 
 import { initializeApp } from "firebase/app";
+import {v4 as uuid} from 'uuid';
 import {
   getAuth,
   signInWithPopup,
@@ -8,7 +9,7 @@ import {
   onAuthStateChanged 
  
 } from 'firebase/auth';
-import { getDatabase, ref, child, get } from "firebase/database";
+import { getDatabase, ref, set, get } from "firebase/database";
 
 
 const firebaseConfig = {
@@ -50,5 +51,16 @@ async function adminUser(user) {
       return {...user, isAdmin};
     }
     return user;
+  });
+}
+
+export async function addNewProduct(product, image) {
+  const id = uuid();
+  return set(ref(database, `products/${id}`), {
+    ...product,
+    id,
+    price: parseInt(product.price),
+    image,
+    options: product.options.split(','),
   });
 }
