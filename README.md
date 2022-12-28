@@ -1,6 +1,6 @@
 <div align="center">
     <br />
-      <a display="block" href="">Click here to see Web😄</a>
+      <a display="block" href="https://celadon-mousse-cccc66.netlify.app/">Click here to see Web😄</a>
     <br /><br />
   </a>
 </div>
@@ -33,7 +33,7 @@
 
 ### Deploy
 
-- `GitHub`
+- `Netlify`
 
 ## Project
 
