@@ -45,7 +45,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://kingofaussie.github.io/mys",
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
     "gh-pages": "^4.0.0",
